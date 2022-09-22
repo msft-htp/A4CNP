@@ -1,4 +1,6 @@
-# Azure Landing Zone Exercise
+# Azure Landing Zone Whiteboard
+
+Time to put your architect hat on and exercise everything you just learned by designing an ALZ solution.
 
 ## Instructions
 
@@ -10,7 +12,7 @@
 ### Task
 Work together as a team by leveraging the information you just learned, links to resources below, and the avaialble Azure SMEs to design an Azure Landing Zone solution addressing Contoso DB, Inc’s requirements below.
 
-> NOTE: As any good architect will tell you when asked how they would design a solution: "it depends." Keep that in mind while working through this challenge as there is not a single "correct" answer.
+> NOTE: Any seasoned architect will tell you, "it depends," when asked how a solution should be designed. The same applies to this challenge - there is not a single "correct" answer.
 
 ## Challenge
 
@@ -20,11 +22,20 @@ Work together as a team by leveraging the information you just learned, links to
 
 Although *Contoso DB, Inc* has had success growing revenue via their AWS, Azure, and GCP IaaS marketplace offerings, internal market research shows there is high demand for a fully managed SaaS offering. The research also shows equal demand for the SaaS solution across AWS and Azure customers; however, they don't have in-house expertise to build a secure and scalable SaaS offering in Azure...yet.
 
-### Your Role
+### Your Role and Mission (should you accept it)
 
 Congratulations! You and your team were just hired as *Contoso DB, Inc's* Azure Architecture/Engineering teams. You have been tasked with designing a scalable and sustainable Azure environment for your Contoso DB SaaS product as well as the various planned internal IT applications.
 
-For this initial design, the CTO wants to understand how we can maintain strict segregta
+The CTO recognizes there will be several iterations of the design as new requirements and considerations are discovered. For the first iteration, she is interested in the following design considerations:
+
+- Azure AD Tenant Design (can we use a single Azure AD tenant or do we need two - one for IT and one for SaaS)
+- Management group design
+- Subscription design (both internal IT and multi-tenent SaaS)
+- Thoughts on whether or not to use Azure Policy to implement security controls and if so, which policies/initiatives might make sense for initial design
+- High-level RBAC design
+- High-level network design
+
+The CTO has also heard about the Azure Landing Zone accelerators and wants your opinion on whether an accelerator could be used as a starting point for your greenfield Azure environment.
 
 ### Stakeholders (and their requirements)
 
@@ -63,6 +74,7 @@ The following resources may help you as you work through your design.
 
 - [What is an Azure Landing Zone?](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/)
 - [Independent software vendor (ISV) considerations for Azure landing zones](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/isv-landing-zone)
+- [Azure Landing Zone reference implementations](https://github.com/Azure/Enterprise-Scale/blob/main/docs/EnterpriseScale-Deploy-reference-implentations.md)
 - [Architect multitenant solutions on Azure](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/overview)
 - [ALZ Management groups](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org-management-groups)
 - [ALZ Subscriptions considerations and recommendations](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org-subscriptions)
