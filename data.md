@@ -21,3 +21,6 @@ For the long term storage we will be updating a Delta Table with all completed f
 ## Questions
 1. Is there a technology that allows to attach to a message broker that will allow the running of spark jobs on a per message basis?
 1. Is there a file format that Spark and Presto can both work with that would be optimized for working with analytics data?
+
+## Possible Solution
+[Here](https://github.com/msft-htp/A4CNP/blob/data-lab/artifact/PossibleSolution.jpg) is a possible solution from a similar situation.
